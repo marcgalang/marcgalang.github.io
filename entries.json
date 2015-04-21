@@ -31,9 +31,14 @@
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Where did all my steam go? I think I must have wasted it over the weekend. In whatever time I had to code I was throwing in little bits of text formatting into my dice game, tweaks to my twit bot, or learning about the ComicVine API so in a future little program I was send the cover of a comic book to a notifier app like Boxcar. Today though, I was double stumped. First by the dreaded blank page. Coming up with a worthy project has long been an issue with me. I can more easily meet an objective if I'm given an objective but sometimes I can't get out of the starting gate if the first step is my own idea. And then I spent all morning double guessing and changing that idea. But at least it's moving now. The other half of my stumpedness was getting my head around MongoDB, which looks sooooo much easier than I found it to be. I often look at a few examples of code and see where they overlap as the necessary parts. The 'simple' examples I found were all using different methods so I couldn't see the commonalities, thus my confusion. But again, i have a bit of understanding now. Maybe a good nights sleep will help..."
 		},
 		{
+		"date":"4/21/2015",
+		"title":"Hi, Otto!",
+		"text":"&#91disclaimer: see above disclaimer&#93<br><br>So I finally settled on a personal project and made decent headway on the interface portion using WConio (after spending an hour with Curses, which is for Unix, not Windows). After being down a bit yesterday I'm okay again. The latest lab assignments presented some interesting challenges. I handled the logic just fine, the commands came to me, and the syntax was eventually fixed, only because things wouldn't run otherwise. I am bit surprised that as I learn more advanced things the simple things can still trip me up. As I switch between more languages in the future, I can see this being an annoying (even if not insurmountable) problem."
+		},
+		{
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
-		"text":"&#91disclaimer: I'm not a blogger because I'm not a writer by nature. I need 12 mental edits before I even speak out loud and then I'm STILL not satisfied. Therefore a first draft blog entry is way below what I'm comfortable with sharing, and there just are not enough minutes in a day to do the edits I want to do. That being said, here are my ramblings.&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
+		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
 		}
 	]
 }
