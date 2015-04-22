@@ -36,6 +36,11 @@
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>So I finally settled on a personal project and made decent headway on the interface portion using WConio (after spending an hour with Curses, which is for Unix, not Windows). After being down a bit yesterday I'm okay again. The latest lab assignments presented some interesting challenges. I handled the logic just fine, the commands came to me, and the syntax was eventually fixed, only because things wouldn't run otherwise. I am bit surprised that as I learn more advanced things the simple things can still trip me up. As I switch between more languages in the future, I can see this being an annoying (even if not insurmountable) problem."
 		},
 		{
+		"date":"4/22/2015",
+		"title":"I eat deadlines for breakfast.",
+		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Further progress made with my personal project. I added functions to print ascii and unicode character numbers as I mapped out my GUI. The next steps of game logic, scoring/status/results appear pretty straight forward now, with time being the most significant limiter. I'm hoping to have the computer play against the user and doing that is the biggest programmatic challenge. And if I finish that I'll add more game elements.<br><br>For the group project I had to decipher how the twitter data was being returned and figure out how to the get to just the pieces I need. Now I just need to take that data and make a list.<br><br>I suspect both deadlines will be met."
+		},
+		{
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
