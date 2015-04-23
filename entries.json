@@ -41,6 +41,11 @@
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Further progress made with my personal project. I added functions to print ascii and unicode character numbers as I mapped out my GUI. The next steps of game logic, scoring/status/results appear pretty straight forward now, with time being the most significant limiter. I'm hoping to have the computer play against the user and doing that is the biggest programmatic challenge. And if I finish that I'll add more game elements.<br><br>For the group project I had to decipher how the twitter data was being returned and figure out how to the get to just the pieces I need. Now I just need to take that data and make a list.<br><br>I suspect both deadlines will be met."
 		},
 		{
+		"date":"4/23/2015",
+		"title":"p=p%2+1",
+		"text":"&#91disclaimer: see above disclaimer&#93<br><br>So how do you use the same mathematical function to turn a 1 into a 2 and a 2 into a 1? I thought there must be a relatively simple way to do it and was thinking about it as I was driving last night. Why was I thinking about such a trivial thing? I'm coming to learn that so much of programming is learning how to do things efficiently. Not only by reducing the number of lines required but also how many characters. At the same time there's a need for readability that can be harder as code becomes more compact. That's the push and pull I'm going through with my 300 odd lines of code in my personal project. Spreading it out makes it a bit easier in some ways(but requires much more scrolling) but when things are more elegant they also impart a decent readability, too. <br><br>Similar to this, Spence, our lead developer on our team project, showed me how using about the same number of characters in about the same number of lines made our program run more than 100 times faster. Genius."
+		},
+		{
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
