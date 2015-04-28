@@ -56,6 +56,11 @@
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Finished up the personal projects today. I had it basically working on Friday but today I added a random token feature, cleaned up a lot of little things, added an intro screen with animation, made everything a little prettier. Overall I'm happy with it at this point, but still know where improvements can be made (speaking of which, I haven't yet made the code object oriented as was speculated last Friday). We had the opportunity to pitch a feature to be added, as would be the case in the real world. Any such simulations are welcome and we should do something like that on a regular basis. Again, having a class of six makes this very doable.<br><br>We had a coding challenge to write a high-low game as quickly as possible. 20 minutes or so to do 30 dirty lines of code was fun but a reminder that coders like Felicity Smoak only exist in comic books (and tv)."
 		},
 		{
+		"date":"4/28/2015",
+		"title":"While python==True",
+		"text":"&#91disclaimer: see above disclaimer&#93<br><br>I've realized that I do a lot of pondering before I take action and the bigger the action required the longer the pondering. Today it took a while to decide on a twitter bot worth spending my time on and decided on idea number 3: taking a random twitter user and comparing the friends of all of that user's friends to see who is not yet on a friend of that user, but should be. Then it will tweet that user with the name of the top 5 people they should follow. It should make sense to them because there should be some commonalities to the names on the list. The twist is that the third name on the list is of my choosing.<br><br>I also think I did ok with the mock interview and look forward to the next one.<br><br>On the technical side of things, it still takes a while to parse out what's what in a json, but I found that a little plug-in for my text editor makes it all make a bit more sense."
+		},
+		{
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
