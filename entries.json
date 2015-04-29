@@ -61,6 +61,11 @@
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>I've realized that I do a lot of pondering before I take action and the bigger the action required the longer the pondering. Today it took a while to decide on a twitter bot worth spending my time on and decided on idea number 3: taking a random twitter user and comparing the friends of all of that user's friends to see who is not yet on a friend of that user, but should be. Then it will tweet that user with the name of the top 5 people they should follow. It should make sense to them because there should be some commonalities to the names on the list. The twist is that the third name on the list is of my choosing.<br><br>I also think I did ok with the mock interview and look forward to the next one.<br><br>On the technical side of things, it still takes a while to parse out what's what in a json, but I found that a little plug-in for my text editor makes it all make a bit more sense."
 		},
 		{
+		"date":"4/29/2015",
+		"title":"pre-Java",
+		"text":"The morning started with a blog entry to wrap up our section on python, setting up a new wordpress account, and looking for a github repository that we found interesting and possibly to contribute to. The blog entry got lost in the move-- a casualty of the lessons of saving everything but not necessarily on a particular workstation if it is not dedicated to you. Nevertheless, we were given a crash course in html as a precursor to javascript. Although I never really manipulated html before it was mostly straightforward and my ability to form tags, styles, classes and stylesheets is of to a solid start. I've completed 2 of the 3 labs. I discovered the key to lab 2 was that an element can have multiple classes."
+		},
+		{
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
