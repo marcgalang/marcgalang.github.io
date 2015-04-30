@@ -1,0 +1,12 @@
+p {
+    font-family: Verdana, Geneva, sans-serif
+}
+
+h1,h2,h3,h4 {
+    font-weight: 100;
+	color:#717171;
+}
+
+.list-group-item-heading, .list-group-item-text, .col-sm-4 {
+	font-weight: 100;
+}
