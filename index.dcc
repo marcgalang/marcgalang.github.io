@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>Blog</title>
+<title>pseudocode</title>
 <!-- CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/bootswatch.css" rel="stylesheet">
@@ -21,7 +21,9 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<h2>Blog</h2>
+<h2>pseudocode</h2>
+<h4 style="color:#444444;">the practice of explaining techincal things in plain english</h4>
+
 </div>	
 <hr/>
 </div>
