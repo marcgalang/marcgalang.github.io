@@ -1,11 +1,6 @@
-$(document).ready(function(){
-	alert ("okay...");
-});
-
-/* function getposts(){
-	$.getJSON('entries.json', function(data) {
-		$.each(data.entries, function(key, val) {
-alert( key + ": " + value );}}} */
+function getposts(){
+	console.log("getposts function")
+}
 
 /* 	
 			var data = getposts();
