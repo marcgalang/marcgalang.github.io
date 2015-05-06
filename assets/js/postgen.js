@@ -37,7 +37,7 @@ function post(){
   $("#json").append('{"entries":['  + '<br />');
   $.getJSON('entries.json', function(data) {
     $.each(data.entries, function(key, val) {
-      var single = '{"t":"' + val.t + '", "h":"' + val.h + '", "c":"' + val.c + '"}';
+      var single = '{"date":"' + val.t + '", "title":"' + val.h + '", "text":"' + val.c + '"}';
       $("#json").append(single);
       if((data.entries.length - 1) != key){
         $("#json").append(',<br />');
