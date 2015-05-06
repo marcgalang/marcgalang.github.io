@@ -1,5 +1,5 @@
 function getposts(){
-	console.log("getposts function")
+	console.log("getposts function");
 }
 
 /* 	
