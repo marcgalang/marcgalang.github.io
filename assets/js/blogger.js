@@ -5,10 +5,7 @@ $(document).ready(function(){
 function getposts(){
 	$.getJSON('entries.json', function(data) {
 		$.each(data.entries, function(key, val) {
-			alert( key + ": " + value );	
-		}
-	}
-}
+alert( key + ": " + value );}}}
 
 /* 	
 			var data = getposts();
