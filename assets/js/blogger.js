@@ -2,8 +2,8 @@
 
 function getposts(){
 	console.log("getposts running...");
-	console.log($("#blog").childNodes.length);
-	if ($("#blog").childNodes.length<2){
+	console.log($("#blog").children().length);
+	if ($("#blog").children().length<2){
 		$("#left").hide();
 		console.log("hiding left button");
 		$("#right").hide();
