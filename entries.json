@@ -94,6 +94,10 @@
 		"date":"...sometime in the future?",
 		"title":"Dang, that was easy!",
 		"text":"&#91disclaimer: see above disclaimer&#93<br><br>Not to brag, but I think I have mastered everything. Not just in code, but in life."
-		}
+		},
+		{
+		"date":"04.7.2015", 
+		"title":"test post", 
+		"text":"[this is in brackets]<br><br>and this is 2 lines away."}
 	]
 }
