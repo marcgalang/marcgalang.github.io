@@ -36,7 +36,7 @@ function getdate(){
 function post(){
   $("#json").append('{"entries":['  + '<br />');
   $.getJSON('entries.json', function(data) {
-	  var reps={'<br>':'&lt;br&gt;','&quot;':'&amp;quot;'};
+	  var reps={'<br>':'&lt;br&gt;','&quot;':'&amp;quot;','&#91':'&amp;#91','&#93':'&amp;#93'};
     $.each(data.entries, function(key, val) {
 	    $.each(reps, function(k,v){
 		var re =new RegExp(k,"g");
