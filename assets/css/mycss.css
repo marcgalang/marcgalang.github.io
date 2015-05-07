@@ -14,3 +14,13 @@ h1,h2,h3,h4 {
 .half {
 	width:50%
 }
+
+input[type="submit"]{
+    background-color: #ffffff;
+    border-radius:6px;
+    color: #0033CC;
+    font-family: Verdana, Geneva, sans-serif
+    font-size: 20px;
+    text-decoration: none;
+    border:none;
+}
