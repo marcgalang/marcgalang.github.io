@@ -20,12 +20,12 @@ function pager(change){
 	for (i=0;i<=4;i++){
 		posts[page*5+i].show();
 	}
-	if page ==0 {
+	if (page ==0){
 		$("#left").hide();
 	}else{
 		$("#left").show();
 	}
-	if page ==ceil(c.length/5) {
+	if (page ==ceil(c.length/5)) {
 		$("#right").hide();
 	}else{
 		$("#right").show();
