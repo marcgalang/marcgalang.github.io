@@ -1,6 +1,7 @@
 
 
 function getposts(){
+	console.log("getposts running...");
 	$("#left").hide();
 	console.log("hiding left button");
 	$("#right").hide();
@@ -15,6 +16,7 @@ function getposts(){
 }
 
 function pager(change){
+	console.log("pager running...");
 	page+=change;
 	var posts=$("#blog").childNodes;
 	for (post in posts){
@@ -37,6 +39,7 @@ function pager(change){
 }
 
 function displayBlog(){
+	console.log("displayBlog running...");
 	$("#blog").show();
 	console.log("show blog");
 	pager(0);
