@@ -17,7 +17,7 @@ function pager(change){
 	for (post in posts){
 		post.hide();
 	}
-	for (i=0;i<=4,i++){
+	for (i=0;i<=4;i++){
 		posts[page*5+i].show();
 	}
 	if page ==0 {
