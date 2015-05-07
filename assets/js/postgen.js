@@ -34,35 +34,35 @@ function getdate(){
 }
 
 function post(){
-	$("#json").append('{"entries":['  + '<br />');
-	$.getJSON('entries.json', function(data) {
-		var reps={'<br>':'&lt;br&gt;','&#91':'&amp;#91','&#93':'&amp;#93'};
-		$.each(data.entries, function(key, val) {
-			$.each(reps, function(k,v){
-				var re = new RegExp(k,"g");
-				val.text = val.text.replace(re,v);
-			});
-	// val.text=val.text.replace(/<br>/g,'&lt;br&gt;');
-
-			var single = '{"date":"' + val.date + '", "title":"' + val.title + '", "text":"' + val.text + '"}';
-			$("#json").append(single);
-			if((data.entries.length - 1) != key){
-				$("#json").append(',<br />');
-			} else {
-				$("#json").append(',<br />');
-	// new post
-				var t = getdate();
-				var h = $("input#h").val();
-				var c = $("textarea#c").val();
-				c = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
-				var added = '{"date":"' + t + '", "title":"' + h + '", "text":"' + c + '"}';
-				$("#json").append(added);
-				$("#json").append('<br />]}');
-	}
-	});
-	});
-	$("body").css('background-color', '#FFFFFF');
-	$("html").css('background-color', '#FFFFFF');
-	$("#getnewpost").hide();
+  $("#json").append('{"entries":['  + '<br />');
+  $.getJSON('entries.json', function(data) {
+	  var reps={'<br>':'&lt;br&gt;'}
+    $.each(data.entries, function(key, val) {
+	    $.each(reps, function(k,v){
+		var re =new RegExp(k,"g");
+		val.text=val.text.replace(re,v);
+	  });
+	  // val.text=val.text.replace(/<br>/g,'&lt;br&gt;');
+	  
+      var single = '{"date":"' + val.date + '", "title":"' + val.title + '", "text":"' + val.text + '"}';
+      $("#json").append(single);
+      if((data.entries.length - 1) != key){
+        $("#json").append(',<br />');
+      } else {
+        $("#json").append(',<br />');
+        // new post
+        var t = getdate();
+        var h = $("input#h").val();
+        var c = $("textarea#c").val();
+        c = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
+        var added = '{"date":"' + t + '", "title":"' + h + '", "text":"' + c + '"}';
+        $("#json").append(added);
+        $("#json").append('<br />]}');
+      }
+    });
+  });
+  $("body").css('background-color', '#FFFFFF');
+  $("html").css('background-color', '#FFFFFF');
+  $("#getnewpost").hide();
 }
 
