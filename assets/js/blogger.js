@@ -11,7 +11,6 @@ function getposts(){
 	 	return false;
 	}	 
 
-
 function pager(change){
 	console.log("pager running...");
 	var page = Number($("#pg").html());
