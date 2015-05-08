@@ -17,7 +17,7 @@ function pager(change){
 	}
 	page+=change;
 	var count = $('div.blogpost').length;
- 	for (c in count){
+ 	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
 		console.log("hiding #"+c); 
 
