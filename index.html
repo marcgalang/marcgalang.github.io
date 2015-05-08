@@ -111,22 +111,13 @@
 
 
 
-
-<!--     Blog     
-	<div id="blogheader" class="row">
-    	   Your blog header and search bar will eventually go here. Ignore this comment for now.
-	</div>
-	<div id="blogcontent" class="row">
-    	   Your blog entries and pagination will eventually go here. Ignore this comment for now.
-	</div>
-    /.Blog      -->
-
 	<div class="row"> 
 	  <div class="col-md-8"> 
 		<h2>blog</h2> 
 		</div> 
 	  <div class="col-md-4"> 
 		<span style="height:50px;"> </span> 
+		 <input type='text' class='search form-control' id='search2' name="search2" placeholder="Search Blog" style="float:right;" /> 
 	  </div> 
 	</div> 
 
@@ -181,5 +172,10 @@
 
 <!--  JavaScript - Placed at the end of the document so the pages load faster -->
 <script src="assets/js/bootstrap.min.js"></script>
+<script>
+	$("#search2").bind("input" ,function(){
+	getselection();
+	});
+</script>	
 </body>
 </html>
