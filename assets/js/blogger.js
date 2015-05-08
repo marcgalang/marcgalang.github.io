@@ -17,10 +17,10 @@ function pager(change){
 	}
 	page+=change;
 	var count = $('div.blogpost').length;
+	console.log('blogposts now ='+count);
  	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
 		console.log("hiding #"+c); 
-
 	}
 	for (i=0;i<=4;i++){
 		$("#"+[page*5+i]+"").show();
