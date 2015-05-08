@@ -1,16 +1,14 @@
 function getposts(){
 	console.log("getposts running...");
-	console.log($('div.blogpost').length);
-	if ($('div.blogpost').length<2){
-		console.log("getting json");
-		$.getJSON('entries.json', function(data){
-			$.each(data.posts, function(key, val) { 
-				$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");	
-				console.log($('div.blogpost').length);
-				});
-		 });
-		}	 
-}
+	console.log("getting json");
+	$.getJSON('entries.json', function(data){
+		$.each(data.posts, function(key, val) { 
+			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");	
+			console.log($('div.blogpost').length);
+			});
+	 });
+	}	 
+
 
 function pager(change){
 	console.log("pager running...");
