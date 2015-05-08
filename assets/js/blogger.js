@@ -37,7 +37,7 @@ function pager(change){
 
 function getselection(){
 	console.log("running 'get selection'");
-	if ($("#search2").val()=null){
+	if ($("#search2").val()==null){
 		console.log("it's empty");
 		return false;
 	}
