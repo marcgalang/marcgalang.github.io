@@ -4,10 +4,6 @@ function getposts(){
 	console.log("getposts running...");
 	console.log($('div.blogpost').length);
 	if ($('div.blogpost').length<2){
-		$("#left").hide();
-		console.log("hiding left button");
-		$("#right").hide();
-		console.log("hiding right button");
 		console.log("getting json");
 		$.getJSON('entries.json', function(data){
 			for (var i in data.entries){ 
@@ -15,8 +11,6 @@ function getposts(){
 				console.log($('div.blogpost').length);
 				}
 		 });
-		 
-		pager(0);
 		}	 
 }
 
