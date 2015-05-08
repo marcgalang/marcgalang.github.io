@@ -1,9 +1,10 @@
 function getposts(){
 	console.log("getposts running...");
-	console.log("getting json");
+	console.log("getting json start");
 	$.getJSON('entries.json', function(data){
 		$.each(data.entries, function(key, val) { 
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
+			console.log("getting json "+key);
 			});
 	 });
 	 	return false;
