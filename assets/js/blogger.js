@@ -4,8 +4,6 @@ function getposts(){
 	$.getJSON('entries.json', function(data){
 		$.each(data.entries, function(key, val) { 
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
-			console.log("created div with id #"+key);
-			console.log($('div.blogpost').length);
 			});
 	 });
 	 
@@ -19,9 +17,9 @@ function pager(change){
 		var page = 0;
 	};
 	page+=change;
-	console.log($("#pg").html());
-	$("#pg").html(page);
-	console.log($("#pg").html());
+	console.log("page before pager call"+$("#pg").html());
+	$("#pg").html(page+1);
+	console.log("page after pager call"+$("#pg").html());
 	var count = $('div.blogpost').length;
 	//var count = 20;
 	console.log('blogposts now ='+count);
@@ -33,14 +31,14 @@ function pager(change){
 		$("#"+[page*5+i]+"").show();
 		console.log("showing #"+(page*5+i)); 
 	}
-	if (page ==0){
+	if (page ==1){
 		console.log("hiding left because page ="+page);
 		$("#left").hide();
 	}else{
 		console.log("showing left because page ="+page);
 		$("#left").show();
 	}
-	if (page ==Math.ceil(count/5)) {
+	if (page >Math.ceil(count/5)) {
 		console.log("hiding right because page ="+page);
 		$("#right").hide();
 	}else{
