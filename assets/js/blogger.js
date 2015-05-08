@@ -6,7 +6,7 @@ function getposts(){
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
 			});
 	 });
-	 
+	 pager();
 	return false;
 	}	 
 
@@ -25,7 +25,7 @@ function pager(change){
 		$("#"+c+"").hide();
 		console.log("hiding id"+"#"+c+""); 
 	}
-	for (i=0;i<=4;i++){
+	for (i=-5;i<=-1;i++){
 		$("#"+[page*5+i]+"").show();
 		console.log("showing #"+(page*5+i)); 
 	}
