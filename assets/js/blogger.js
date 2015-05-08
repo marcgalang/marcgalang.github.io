@@ -2,8 +2,8 @@
 
 function getposts(){
 	console.log("getposts running...");
-	console.log($("#blog").children().length);
-	if ($("#blog").children().length<2){
+	console.log($('div.blogpost').length);
+	if ($('div.blogpost').length<2){
 		$("#left").hide();
 		console.log("hiding left button");
 		$("#right").hide();
@@ -25,7 +25,7 @@ function pager(change){
 	}
 	console.log("pager running...");
 	page+=change;
-	var count = $("#blog").children().length;
+	var count = $('div.blogpost').length;
 /* 	for (c in count){
 		$("#"+c+"").hide();
 	}
