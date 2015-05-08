@@ -38,7 +38,7 @@ function pager(change){
 	}else{
 		$("#left").show();
 	}
-	if (page ==ceil(count/5)) {
+	if (page ==Math.ceil(count/5)) {
 		$("#right").hide();
 	}else{
 		$("#right").show();
