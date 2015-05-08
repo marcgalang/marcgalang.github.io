@@ -3,7 +3,8 @@ function getposts(){
 	console.log("getting json");
 	$.getJSON('entries.json', function(data){
 		$.each(data.entries, function(key, val) { 
-			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");	
+			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
+			console.log("created div with id #"+key);
 			console.log($('div.blogpost').length);
 			});
 	 });
