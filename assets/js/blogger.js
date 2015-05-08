@@ -13,12 +13,10 @@ function getposts(){
 
 function pager(change){
 	console.log("pager running...");
-	if (change==0){
-		var page = 0;
-	};
+	var page = $("#pg").html();
+	console.log("page before pager call"+page);
 	page+=change;
-	console.log("page before pager call"+$("#pg").html());
-	$("#pg").html(page+1);
+	$("#pg").html(page);
 	console.log("page after pager call"+$("#pg").html());
 	var count = $('div.blogpost').length;
 	//var count = 20;
