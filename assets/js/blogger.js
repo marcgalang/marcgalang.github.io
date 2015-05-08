@@ -8,6 +8,7 @@ function getposts(){
 			console.log($('div.blogpost').length);
 			});
 	 });
+	 
 	return false;
 	}	 
 
@@ -21,8 +22,8 @@ function pager(change){
 	console.log($("#pg").html());
 	$("#pg").html(page);
 	console.log($("#pg").html());
-	// var count = $('div.blogpost').length;
-	var count = 20;
+	var count = $('div.blogpost').length;
+	//var count = 20;
 	console.log('blogposts now ='+count);
  	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
