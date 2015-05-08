@@ -8,15 +8,14 @@ function getposts(){
 		console.log("hiding left button");
 		$("#right").hide();
 		console.log("hiding right button");
-
+		$("#blog").hide();
+		console.log("hiding blog");
 		$.getJSON('entries.json', function(data){
 			for (var i in data.entries){ 
 				$("#blog").append("<div id='"+i+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[i].date+"</p></small><h5>"+data.entries[i].title+"</h5><p>"+data.entries[i].text+"</p><hr/></div>");	
 				}
 		 });
-			$("#blog").hide();
-		console.log("hiding blog");
-		}	 
+	}	 
 }
 
 function pager(change){
