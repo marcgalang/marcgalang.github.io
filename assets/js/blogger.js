@@ -20,14 +20,17 @@ function getposts(){
 }
 
 function pager(change){
+	if (change==0){
+		var page = 0;
+	}
 	console.log("pager running...");
 	page+=change;
-	var posts=$("#blog").childNodes;
-	for (post in posts){
-		$(post).hide();
+	var count = $("#blog").children().length;
+	for (c in count){
+		$("#"+c+"").hide();
 	}
 	for (i=0;i<=4;i++){
-		$(posts[page*5+i]).show();
+		$("#"+[page*5+i]+"").show();
 		console.log("we should show post #"+page*5);
 	}
 	if (page ==0){
@@ -35,7 +38,7 @@ function pager(change){
 	}else{
 		$("#left").show();
 	}
-	if (page ==ceil(c.length/5)) {
+	if (page ==ceil(count/5)) {
 		$("#right").hide();
 	}else{
 		$("#right").show();
