@@ -1,15 +1,13 @@
-
-
 function getposts(){
 	console.log("getposts running...");
 	console.log($('div.blogpost').length);
 	if ($('div.blogpost').length<2){
 		console.log("getting json");
 		$.getJSON('entries.json', function(data){
-			for (var i in data.entries){ 
-				$("#blog").append("<div id='"+i+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[i].date+"</p></small><h5>"+data.entries[i].title+"</h5><p>"+data.entries[i].text+"</p><hr/></div>");	
+			$.each(data.posts, function(key, val) { 
+				$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");	
 				console.log($('div.blogpost').length);
-				}
+				});
 		 });
 		}	 
 }
