@@ -8,6 +8,7 @@ function getposts(){
 			console.log($('div.blogpost').length);
 			});
 	 });
+	return false;
 	}	 
 
 
@@ -19,6 +20,7 @@ function pager(change){
 	page+=change;
 	console.log($("#pg").html());
 	$("#pg").html(page);
+	console.log($("#pg").html());
 	// var count = $('div.blogpost').length;
 	var count = 20;
 	console.log('blogposts now ='+count);
@@ -44,6 +46,7 @@ function pager(change){
 		console.log("showing right because page ="+page);
 		$("#right").show();
 	}
+	return false;
 }
 
 
