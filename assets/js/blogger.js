@@ -46,7 +46,7 @@ function getselection(){
 	console.log('looking for "'+s2+'"');
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
-	console.log($("#"+c+""));
+	console.log($("#"+c+"").innerHTML);
 	}
 }
 	
