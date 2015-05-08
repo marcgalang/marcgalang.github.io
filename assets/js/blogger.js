@@ -6,8 +6,7 @@ function getposts(){
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
 			});
 	 });
-	 pager();
-	return false;
+	 	return false;
 	}	 
 
 
@@ -36,7 +35,7 @@ function pager(change){
 		console.log("showing left because page ="+page);
 		$("#left").show();
 	}
-	if (page >Math.ceil(count/5)) {
+	if (page ==Math.ceil(count/5)) {
 		console.log("hiding right because page ="+page);
 		$("#right").hide();
 	}else{
