@@ -15,7 +15,7 @@ h1,h2,h3,h4 {
 	width:50%
 }
 
-input[type="submit"]{
+input{
     background-color: #ffffff;
     border-radius:6px;
     color: #0033CC;

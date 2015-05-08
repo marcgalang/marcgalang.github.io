@@ -5,7 +5,9 @@ function getposts(){
 		$.each(data.entries, function(key, val) { 
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
 			console.log("getting json "+key);
-			pager(0);
+			if (data.entries.length-1==key){
+				pager(0);
+			};
 		});
 	 });
 	 	return false;
@@ -31,17 +33,17 @@ function pager(change){
 	}
 	if (page ==1){
 		console.log("hiding left because page ="+page);
-		$("#left").style.visibility = "hidden";
+		$("#left").hide();
 	}else{
 		console.log("showing left because page ="+page);
-		$("#left").style.visibility = "visible"; 
+		$("#left").show();
 	}
 	if (page ==Math.ceil(count/5)) {
 		console.log("hiding right because page ="+page);
-		$("#right").style.visibility = "hidden";
+		$("#right").hide();
 	}else{
 		console.log("showing right because page ="+page);
-		$("#right").style.visibility = "visible"; 
+		$("#right").show();
 	}
 	return false;
 }
