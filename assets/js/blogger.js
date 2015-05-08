@@ -16,25 +16,24 @@ function getposts(){
 				}
 		 });
 		 
-		/* 	$("#blog").hide();
-			console.log("hiding blog"); */
+		pager(0);
 		}	 
 }
 
 function pager(change){
+	console.log("pager running...");
 	if (change==0){
 		var page = 0;
 	}
-	console.log("pager running...");
 	page+=change;
 	var count = $('div.blogpost').length;
-/* 	for (c in count){
+ 	for (c in count){
 		$("#"+c+"").hide();
 	}
 	for (i=0;i<=4;i++){
 		$("#"+[page*5+i]+"").show();
 		console.log("we should show post #"+(page*5+i); 
-	}*/
+	}
 	if (page ==0){
 		$("#left").hide();
 	}else{
@@ -47,11 +46,5 @@ function pager(change){
 	}
 }
 
-function displayBlog(){
-	console.log("displayBlog running...");
-	$("#blog").show();
-	console.log("show blog");
-	pager(0);
+
 	
-	
-}
