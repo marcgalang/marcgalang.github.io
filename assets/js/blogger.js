@@ -13,7 +13,7 @@ function getposts(){
 
 function pager(change){
 	console.log("pager running...");
-	var page = $("#pg").html();
+	var page = number($("#pg").html());
 	console.log("page before pager call"+page);
 	page+=change;
 	$("#pg").html(page);
