@@ -31,17 +31,17 @@ function pager(change){
 	}
 	if (page ==1){
 		console.log("hiding left because page ="+page);
-		$("#left").hide();
+		$("#left").disabled=true;
 	}else{
 		console.log("showing left because page ="+page);
-		$("#left").show();
+		$("#left").disabled=false;
 	}
 	if (page ==Math.ceil(count/5)) {
 		console.log("hiding right because page ="+page);
-		$("#right").hide();
+		$("#right").disabled=true;
 	}else{
 		console.log("showing right because page ="+page);
-		$("#right").show();
+		$("#right").disabled=false;
 	}
 	return false;
 }
