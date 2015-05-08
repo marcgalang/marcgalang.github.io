@@ -17,6 +17,7 @@ function pager(change){
 		var page = 0;
 	};
 	page+=change;
+	$("#pg").html(page);
 	// var count = $('div.blogpost').length;
 	var count = 20;
 	console.log('blogposts now ='+count);
