@@ -14,9 +14,10 @@ function pager(change){
 	console.log("pager running...");
 	if (change==0){
 		var page = 0;
-	}
+	};
 	page+=change;
-	var count = $('div.blogpost').length;
+	// var count = $('div.blogpost').length;
+	var count = 20;
 	console.log('blogposts now ='+count);
  	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
