@@ -32,7 +32,7 @@ function pager(change){
 	}
 	for (i=0;i<=4;i++){
 		$("#"+[page*5+i]+"").show();
-		console.log("we should show post #"+(page*5+i); 
+		console.log("we should show post #"+(page*5+i)); 
 	}
 	if (page ==0){
 		$("#left").hide();
