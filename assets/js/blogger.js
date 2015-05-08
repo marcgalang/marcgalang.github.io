@@ -37,12 +37,12 @@ function pager(change){
 
 function getselection(){
 	console.log("running 'get selection'");
-	if ($("search2").val()=null){
+	if ($("#search2").val()=null){
 		console.log("it's empty");
 		return false;
 	}
 	
-	var s2 = new RegExp($("search2").val(),"i")
+	var s2 = new RegExp($("#search2").val(),"i")
 	console.log('looking for "'+s2+'"');
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
