@@ -26,12 +26,12 @@ function pager(change){
 	console.log("pager running...");
 	page+=change;
 	var count = $("#blog").children().length;
-	for (c in count){
+/* 	for (c in count){
 		$("#"+c+"").hide();
 	}
 	for (i=0;i<=4;i++){
 		$("#"+[page*5+i]+"").show();
-		console.log("we should show post #"+page*5);
+		console.log("we should show post #"+(page*5+i); */
 	}
 	if (page ==0){
 		$("#left").hide();
