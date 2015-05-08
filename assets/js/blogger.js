@@ -27,13 +27,17 @@ function pager(change){
 		console.log("showing #"+(page*5+i)); 
 	}
 	if (page ==0){
+		console.log("hiding left because page ="+page);
 		$("#left").hide();
 	}else{
+		console.log("showing left because page ="+page);
 		$("#left").show();
 	}
 	if (page ==Math.ceil(count/5)) {
+		console.log("hiding right because page ="+page);
 		$("#right").hide();
 	}else{
+		console.log("showing right because page ="+page);
 		$("#right").show();
 	}
 }
