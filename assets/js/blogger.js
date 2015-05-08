@@ -17,6 +17,7 @@ function pager(change){
 		var page = 0;
 	};
 	page+=change;
+	console.log($("#pg").html());
 	$("#pg").html(page);
 	// var count = $('div.blogpost').length;
 	var count = 20;
