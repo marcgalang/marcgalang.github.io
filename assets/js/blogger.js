@@ -15,7 +15,7 @@ function getposts(){
 				}
 		 });
 			$("#blog").hide();
-			console.log("hiding blog");
+		console.log("hiding blog");
 		}	 
 }
 
