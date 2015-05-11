@@ -62,6 +62,7 @@ function getselection(){
 		pager(0);
 	} else {
 		console.log("it's empty");
+		console.log($('div.blogpost').length);
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 			console.log(i+" "+$('div.blogpost').length)
