@@ -62,6 +62,7 @@ function getselection(){
 		};
 		$("#hits").html("Search found "+found.length+" matches.");
 		$("#found").data(found);
+		console.log(found);
 		pager(0);
 	} else {
 		console.log("it's empty");
