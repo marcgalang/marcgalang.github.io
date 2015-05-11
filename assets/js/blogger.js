@@ -46,13 +46,13 @@ function getselection(){
 	console.log("running 'get selection'");
 	var found = [];
 	$("#pg").html(1);
-	if ($("#search2").val()=="(?:)"){
+	if ($("#search2").val()){
 		console.log("it's empty");
 		return false;
 	}
 	
 	var s2 = new RegExp($("#search2").val(),"i")
-	console.log('looking for "'+s2+'" aka:'+$("#search2").val());
+	console.log('looking for "'+s2+'"');
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
