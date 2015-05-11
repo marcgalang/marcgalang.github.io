@@ -65,7 +65,7 @@ function getselection(){
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
-		console.log(found);
+		console.log("found is "+found);
 		$("#found").html(found);
 		pager(0);
 	};
