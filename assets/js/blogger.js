@@ -62,7 +62,11 @@ function getselection(){
 		pager(0);
 	} else {
 		console.log("it's empty");
-		return false;
+		for (i=0;i<=key;i++){
+			found.push(i);
+		};
+		$("#found").html(found);
+		pager(0);
 	};
 }	
 
