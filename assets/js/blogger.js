@@ -41,18 +41,18 @@ function pager(change){
 	return false;
 }
 
-function getselection(){
+function getselection(searchString){
 	
 	console.log("running 'get selection'");
 	found = [];
 	$("#pg").html(1);
-	if ($("#search2").val()){
+	if (searchString){
 		$('.hideOnSearch').hide();
 		var s2="";
-		for (i=0;i<$("#search2").val().length;i++){
-			s2+=($("#search2").val().charAt(i)+"\\s*");
+		for (i=0;i<searchString.length;i++){
+			s2+=(searchString.charAt(i)+"\\s*");
 		};
-		s2+=($("#search2").val().charAt(i));
+		s2+=(searchString.charAt(i));
 		
 		s2 = new RegExp(s2,"i");
 		console.log('looking for "'+s2+'"');
@@ -61,7 +61,6 @@ function getselection(){
 			$("#"+c+"").hide();
 			if($("#"+c+"").text().search(s2)>0){
 				found.push(c);
-				console.log(found);
 			};
 		};
 		$("#hits").html("Search found "+found.length+" matches.");

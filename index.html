@@ -175,8 +175,13 @@
 <!--  JavaScript - Placed at the end of the document so the pages load faster -->
 <script src="assets/js/bootstrap.min.js"></script>
 <script>
+	$("#search-second").bind("input" ,function(){
+	getselection($("#search-second").val());
+	});
+	
 	$("#search2").bind("input" ,function(){
-	getselection();
+	$("#search-second").val($("#search2").val());
+	getselection($("#search2").val());
 	});
 </script>	
 </body>
