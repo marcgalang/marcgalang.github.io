@@ -26,7 +26,7 @@ function pager(change){
 		$("#"+c+"").hide();
 	}
 	for (i=-5;i<=-1;i++){
-		$("#"+[found[page*5+i]]+"").show(400);
+		$("#"+[found[page*5+i]]+"").show();
 	}
 	if (page ==1){
 		$("#left").hide();
@@ -57,7 +57,8 @@ function getselection(){
 	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
 		if($("#"+c+"").text().search(s2)<0){
-			found.push(c)
+			found.push(c);
+			console.log(found);
 		};
 	};
 	$("#hits").html("Search found "+found.length+" matches.");
