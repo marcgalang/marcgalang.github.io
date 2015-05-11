@@ -47,6 +47,7 @@ function getselection(){
 	var found = [];
 	$("#pg").html(1);
 	if ($("#search2").val()){
+		$('.hideOnSearch').hide();
 		var s2 = new RegExp($("#search2").val(),"i")
 		console.log('looking for "'+s2+'"');
 		var count = $('div.blogpost').length;
@@ -62,12 +63,11 @@ function getselection(){
 		pager(0);
 	} else {
 		console.log("it's empty");
-		console.log("blah"+$('div.blogpost').length);
+		$('.hideOnSearch').show();
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 			console.log(i+" "+$('div.blogpost').length)
 		};
-		console.log("found is "+found);
 		$("#found").html(found);
 		pager(0);
 	};
