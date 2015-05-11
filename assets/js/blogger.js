@@ -52,7 +52,7 @@ function getselection(){
 			found.push(c)
 		};
 	};
-	$("#hits").html = "Search found "+found.length+" matches."
+	$("#hits").html("Search found "+found.length+" matches.");
 
 }
 	
