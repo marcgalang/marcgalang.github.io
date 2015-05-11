@@ -45,11 +45,11 @@ function post(){
 			// val.text=val.text.replace(/<br>/g,'&lt;br&gt;');
 
 			var single = '{"date":"' + val.date + '", "title":"' + val.title + '", "text":"' + val.text + '"}';
-			$("#json").append(single);
+			
 			if((data.entries.length - 1) != key){
+				$("#json").append(single);
 				$("#json").append(',<br />');
 			} else { 
-				$("#json").append(',<br />');
 				// new post
 				var t = getdate();
 				var h = $("input#h").val();
@@ -57,6 +57,8 @@ function post(){
 				c = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
 				var added = '{"date":"' + t + '", "title":"' + h + '", "text":"' + c + '"}';
 				$("#json").append(added);
+				$("#json").append(',<br />');
+				$("#json").append(single);
 				$("#json").append('<br />]}');
 			}
 		});
