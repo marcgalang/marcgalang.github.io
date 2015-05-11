@@ -4,6 +4,11 @@ function getposts(){
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
 		
 			if (data.entries.length-1==key){
+				var found = [];
+				for (i=0;i<=key;i++){
+					found.push(i);
+				};
+				$("#found").html(found);
 				pager(0);
 			};
 		});
@@ -13,14 +18,15 @@ function getposts(){
 
 function pager(change){
 	var page = Number($("#pg").html());
+	var found = $("#found").html();
 	page+=change;
 	$("#pg").html(page);
-	var count = $('div.blogpost').length;
- 	for (c=0;c<=count;c++){
+	var count = found.length;
+ 	for (c=0;c<=$('div.blogpost').length;c++){
 		$("#"+c+"").hide();
 	}
 	for (i=-5;i<=-1;i++){
-		$("#"+[page*5+i]+"").show(400);
+		$("#"+[found[page*5+i]]+"").show(400);
 	}
 	if (page ==1){
 		$("#left").hide();
@@ -36,8 +42,10 @@ function pager(change){
 }
 
 function getselection(){
+	
 	console.log("running 'get selection'");
 	var found = [];
+	$("#pg").html(1);
 	if ($("#search2").val()==null){
 		console.log("it's empty");
 		return false;
@@ -53,6 +61,7 @@ function getselection(){
 		};
 	};
 	$("#hits").html("Search found "+found.length+" matches.");
-
+	$("#found").html(found);
+	pager(0);
 }
 	
