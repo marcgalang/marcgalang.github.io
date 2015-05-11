@@ -4,11 +4,10 @@ function getposts(){
 			$("#blog").append("<div id='"+key+"' class='col-sm-12 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div>");
 		
 			if (data.entries.length-1==key){
-				var found = [];
+				found = [];
 				for (i=0;i<=key;i++){
 					found.push(i);
 				};
-				$("#found").data(found);
 				pager(0);
 			};
 		});
@@ -19,7 +18,6 @@ function getposts(){
 function pager(change){
 	console.log("running pager");
 	var page = Number($("#pg").html());
-	var found = $("#found").data();
 	page+=change;
 	$("#pg").html(page);
 	var count = found.length;
@@ -46,7 +44,7 @@ function pager(change){
 function getselection(){
 	
 	console.log("running 'get selection'");
-	var found = [];
+	found = [];
 	$("#pg").html(1);
 	if ($("#search2").val()){
 		$('.hideOnSearch').hide();
@@ -61,7 +59,6 @@ function getselection(){
 			};
 		};
 		$("#hits").html("Search found "+found.length+" matches.");
-		$("#found").data(found);
 		console.log(found);
 		pager(0);
 	} else {
@@ -70,7 +67,6 @@ function getselection(){
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
-		$("#found").data(found);
 		pager(0);
 	};
 }	
