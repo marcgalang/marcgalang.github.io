@@ -61,6 +61,7 @@ function getselection(){
 			};
 		};
 		$("#hits").html("Search found "+found.length+" matches.");
+		$("#hits").show();
 		console.log(found);
 		pager(0);
 	} else {
@@ -69,6 +70,7 @@ function getselection(){
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
+		$("#hits").hide();
 		pager(0);
 	};
 }	
