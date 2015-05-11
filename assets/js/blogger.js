@@ -44,6 +44,7 @@ function pager(change){
 function getselection(searchString){
 	
 	console.log("running 'get selection'");
+	$("#search2").hide();
 	found = [];
 	$("#pg").html(1);
 	if (searchString){

@@ -51,6 +51,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="http://www.devcodecamp.com" target="_blank"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <img src="assets/img/devcodecamp.png" alt="devcodecamp"></a></li>	
 				<li><input type="text" id="search-second" class="form-control" placeholder="Search Blog" style="float:right; margin-top:18px;"></li>
+				<li id="found" style="display:inline"></li> 
 
 			</ul>
 		</div>
@@ -119,7 +120,7 @@
 		<span style="height:50px;"> </span> 
 		 <input type='text' class='search form-control input' id='search2' name="search2" placeholder="Search Blog" style="float:right;" />
 		<p id="hits"></p>
-		<p id="found" style="display:inline"></p> 
+		
 	  </div> 
 	</div> 
 
@@ -181,6 +182,7 @@
 	
 	$("#search2").bind("input" ,function(){
 	$("#search-second").val($("#search2").val());
+	$("#search-second").focus();
 	getselection($("#search2").val());
 	});
 </script>	
