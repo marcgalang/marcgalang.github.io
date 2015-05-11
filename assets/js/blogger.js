@@ -52,7 +52,7 @@ function getselection(){
 	}
 	
 	var s2 = new RegExp($("#search2").val(),"i")
-	console.log('looking for "'+s2+'"');
+	console.log('looking for "'+s2+'" aka:'+$("#search2").val());
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
