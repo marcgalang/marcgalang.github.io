@@ -47,22 +47,23 @@ function getselection(){
 	var found = [];
 	$("#pg").html(1);
 	if ($("#search2").val()){
+		var s2 = new RegExp($("#search2").val(),"i")
+		console.log('looking for "'+s2+'"');
+		var count = $('div.blogpost').length;
+		for (c=0;c<=count;c++){
+			$("#"+c+"").hide();
+			if($("#"+c+"").text().search(s2)>0){
+				found.push(c);
+				console.log(found);
+			};
+		};
+		$("#hits").html("Search found "+found.length+" matches.");
+		$("#found").html(found);
+		pager(0);
+	} else {
 		console.log("it's empty");
 		return false;
-	}
-	
-	var s2 = new RegExp($("#search2").val(),"i")
-	console.log('looking for "'+s2+'"');
-	var count = $('div.blogpost').length;
-	for (c=0;c<=count;c++){
-		$("#"+c+"").hide();
-		if($("#"+c+"").text().search(s2)>0){
-			found.push(c);
-			console.log(found);
-		};
 	};
-	$("#hits").html("Search found "+found.length+" matches.");
-	$("#found").html(found);
-	pager(0);
-}
+}	
+	}
 	
