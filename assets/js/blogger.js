@@ -17,6 +17,7 @@ function getposts(){
 }	 
 
 function pager(change){
+	console.log("running pager");
 	var page = Number($("#pg").html());
 	var found = $("#found").html();
 	page+=change;
@@ -25,6 +26,7 @@ function pager(change){
  	for (c=0;c<=$('div.blogpost').length;c++){
 		$("#"+c+"").hide();
 	}
+	console.log("found has "+found.length+"items which include "+found)
 	for (i=-5;i<=-1;i++){
 		$("#"+[found[page*5+i]]+"").show();
 	}
@@ -66,7 +68,6 @@ function getselection(){
 		$('.hideOnSearch').show();
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
-			console.log(i+" "+$('div.blogpost').length)
 		};
 		$("#found").html(found);
 		pager(0);
