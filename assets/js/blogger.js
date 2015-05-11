@@ -56,7 +56,7 @@ function getselection(){
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
 		$("#"+c+"").hide();
-		if($("#"+c+"").text().search(s2)<0){
+		if($("#"+c+"").text().search(s2)>0){
 			found.push(c);
 			console.log(found);
 		};
