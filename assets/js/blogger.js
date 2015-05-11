@@ -46,7 +46,7 @@ function getselection(){
 	console.log("running 'get selection'");
 	var found = [];
 	$("#pg").html(1);
-	if ($("#search2").val()==null){
+	if ($("#search2").val()=="(?:)"){
 		console.log("it's empty");
 		return false;
 	}
