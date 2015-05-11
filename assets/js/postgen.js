@@ -56,7 +56,7 @@ function post(){
 				var c = $("textarea#c").val();
 				$.each(reps, function(k,v){
 					var re =new RegExp(k,"g");
-					val.c=c.replace(re,v);
+					c=c.replace(re,v);
 				});
 				var added = '{"date":"' + t + '", "title":"' + h + '", "text":"' + c + '"}';
 				$("#json").append(added);
