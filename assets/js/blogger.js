@@ -47,7 +47,12 @@ function getselection(){
 	console.log('looking for "'+s2+'"');
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
-	console.log($("#"+c+"").text());
-	}
+		$("#"+c+"").hide();
+		if($("#"+c+"").text().search(i)<0){
+			found.push(c)
+		};
+	};
+	$("#hits").text = "Search found "+found.length+" matches."
+
 }
 	
