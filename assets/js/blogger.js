@@ -64,6 +64,7 @@ function getselection(){
 		console.log("it's empty");
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
+			console.log(i+" "+$('div.blogpost').length)
 		};
 		console.log("found is "+found);
 		$("#found").html(found);
