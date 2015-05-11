@@ -8,7 +8,7 @@ function getposts(){
 				for (i=0;i<=key;i++){
 					found.push(i);
 				};
-				$("#found").html(found);
+				$("#found").data(found);
 				pager(0);
 			};
 		});
@@ -19,7 +19,7 @@ function getposts(){
 function pager(change){
 	console.log("running pager");
 	var page = Number($("#pg").html());
-	var found = $("#found").html();
+	var found = $("#found").data();
 	page+=change;
 	$("#pg").html(page);
 	var count = found.length;
@@ -61,7 +61,7 @@ function getselection(){
 			};
 		};
 		$("#hits").html("Search found "+found.length+" matches.");
-		$("#found").html(found);
+		$("#found").data(found);
 		pager(0);
 	} else {
 		console.log("it's empty");
@@ -69,7 +69,7 @@ function getselection(){
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
-		$("#found").html(found);
+		$("#found").data(found);
 		pager(0);
 	};
 }	
