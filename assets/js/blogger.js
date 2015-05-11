@@ -60,6 +60,7 @@ function getselection(){
 		};
 		$("#hits").html("Search found "+found.length+" matches.");
 		console.log(found);
+		$("#hits").show();
 		pager(0);
 	} else {
 		console.log("it's empty");
@@ -67,6 +68,7 @@ function getselection(){
 		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
+		$("#hits").hide();
 		pager(0);
 	};
 }	
