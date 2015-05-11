@@ -50,9 +50,9 @@ function getselection(){
 		$('.hideOnSearch').hide();
 		var s2;
 		for (i=0;i<$("#search2").val().length;i++){
-			s2.push(charAt(i)+"\s*");
+			s2.concat(charAt(i)+"\s*");
 		};
-		s2.push(charAt(i));
+		s2.concat(charAt(i));
 		
 		s2 = new RegExp(s2,"i");
 		console.log('looking for "'+s2+'"');
