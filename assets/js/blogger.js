@@ -37,6 +37,7 @@ function pager(change){
 
 function getselection(){
 	console.log("running 'get selection'");
+	var found = [];
 	if ($("#search2").val()==null){
 		console.log("it's empty");
 		return false;
@@ -46,7 +47,7 @@ function getselection(){
 	console.log('looking for "'+s2+'"');
 	var count = $('div.blogpost').length;
 	for (c=0;c<=count;c++){
-	console.log($("#"+c+""));
+	console.log($("#"+c+"").text());
 	}
 }
 	
