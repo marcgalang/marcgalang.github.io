@@ -54,7 +54,10 @@ function post(){
 				var t = getdate();
 				var h = $("input#h").val();
 				var c = $("textarea#c").val();
-				c = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
+				$.each(reps, function(k,v){
+					var re =new RegExp(k,"g");
+					val.c=c.replace(re,v);
+				}
 				var added = '{"date":"' + t + '", "title":"' + h + '", "text":"' + c + '"}';
 				$("#json").append(added);
 				$("#json").append(',<br />');
