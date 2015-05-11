@@ -62,7 +62,7 @@ function getselection(){
 		pager(0);
 	} else {
 		console.log("it's empty");
-		for (i=0;i<=key;i++){
+		for (i=0;i<=$('div.blogpost').length;i++){
 			found.push(i);
 		};
 		$("#found").html(found);
