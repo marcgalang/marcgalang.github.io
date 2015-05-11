@@ -50,7 +50,7 @@ function getselection(){
 		$('.hideOnSearch').hide();
 		var s2;
 		for (i=0;i<$("#search2").val().length;i++){
-			s2+=($("#search2").val().charAt(i)+"\s*");
+			s2+=($("#search2").val().charAt(i)+"\\s*");
 		};
 		s2+=($("#search2").val().charAt(i));
 		
