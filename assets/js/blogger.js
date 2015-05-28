@@ -14,7 +14,16 @@ function getposts(){
 	 });
 	 return false;
 }	 
-
+function pickComic(){
+	var favorites = [
+	"http://static.comicvine.com/uploads/scale_large/10/108980/2260155-saga__1__2012_.jpg",
+	"http://static.comicvine.com/uploads/scale_large/0/9116/2199272-01.jpg",
+	"http://static.comicvine.com/uploads/scale_large/6/67663/2971157-09.jpg",
+	"http://static.comicvine.com/uploads/scale_large/6/67663/4261575-01-2nd-print.jpg"
+	];
+	var favorite = favorites[Math.floor(Math.random() * favorites.length)];
+	$("#comic").attr("src",favorite);
+}
 function pager(change){
 	console.log("running pager");
 	var page = Number($("#pg").html());
