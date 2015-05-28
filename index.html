@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <title>marc galang</title>
 
-    <!-- CSS -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.ico" rel="icon">
+
+    <title>marc galang</title><!-- CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootswatch.css" rel="stylesheet">
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/blogger.js"></script>
-
-
-	<link href="assets/css/mycss.css" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/blogger.js"></script>
+    <link href="assets/css/mycss.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
@@ -22,171 +20,197 @@
     <![endif]-->
 
     <style>
-    .sicon {
-    	height:40px;
-    	margin-top: 15px;
-    	vertical-align: bottom;
+.sicon {
+        height:40px;
+        margin-top: 15px;
+        vertical-align: bottom;
     }
-	</style>
-	
-  </head>
-  
+    </style>
+</head>
+
 <body>
-<div class="container">
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-target=
+                    "#bs-example-navbar-collapse-2" data-toggle="collapse"
+                    type="button"><span class="sr-only">Toggle
+                    navigation</span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href=
+                    "#">marc galang</a>
+                </div>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">marc galang</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-			<ul class="nav navbar-nav">
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="http://www.devcodecamp.com" target="_blank"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <img src="assets/img/devcodecamp.png" alt="devcodecamp"></a></li>	
-				<li><input type="text" id="search-second" class="form-control" placeholder="Search Blog" style="float:right; margin-top:18px;"></li>
-				<li id="found" style="display:inline"></li> 
+                <div class="collapse navbar-collapse" id=
+                "bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav"></ul>
 
-			</ul>
-		</div>
-	</nav>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://www.devcodecamp.com" target=
+                            "_blank"><span class=
+                            "glyphicon glyphicon-share-alt"></span> <img alt=
+                            "devcodecamp" src="assets/img/devcodecamp.png"></a>
+                        </li>
 
-	<div class="row hideOnSearch">
-		<div class="col-md-8">
-			<h1>under [code] development</h1> 
-			<p>welcome to my page. this page, like me, like the future, is constantly under development. my current stage of development brings me to <a href="http://www.devcodecamp.com/" target="_blank">devCodeCamp</a> where i am honing my skills. but being a student doesn't mean i'm a novice. it means i strive to be current, relevant, and always moving forward. </p>
+                        <li><input class="form-control" id="search-second"
+                        placeholder="Search Blog" style=
+                        "float:right; margin-top:18px;" type="text"></li>
 
-		</div>
-		<div class="col-md-4">
-			<h2>&nbsp;&nbsp;contact me</h2>
-			<div class="list-group">
-				<a href="mailto:mgalang_h@devCodeCamp.com" target="_top" class="list-group-item">
-					<h4 class="list-group-item-heading">at devCodeCamp:</h4>
-					<p class="list-group-item-text">mgalang_h@devCodeCamp.com</p>
-				</a>
-				<a href="mailto:marcgalang@gmail.com" target="_top" class="list-group-item">
-					<h4 class="list-group-item-heading">personal/professional:</h4>
-					<p class="list-group-item-text">marcgalang@gmail.com</p>
-				</a>
-			<center>
-			<!-- <p><br /><strong><a href="blog.html" target="_blank">follow my progress at devCodeCamp</a></strong></p> 
-			<p><br /><form name="readblog" onsubmit="return pager(0)">
-			<input type="submit" value="follow my progress at devCodeCamp"> 
-		</form></p>-->
-			<p>
-		 		<a href="https://www.linkedin.com/in/mmgalang" target="_blank"><img class="sicon" src="assets/img/in.png" alt="linkedin"></a>
-		 		<a href="https://twitter.com/mmgalang" target="_blank"><img class="sicon" src="assets/img/tw.png" alt="instagram"></a>
-			</p>
-			</center>
+                        <li id="found" style="display:inline"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-			</div>
-		</div>
-	</div>
-	  <p style="padding:5px"></p>
-	<div class="row hideOnSearch">
-		<div class="col-md-8">
-			<h2>what consumes my time when i'm not coding?</h2>
-			<hr/>
-		</div>
-	</div>
+        <div class="row hideOnSearch">
+            <div class="col-md-8">
+                <h1>under [code] development</h1>
 
-	<div class="row hideOnSearch">
-		<div class="col-xs-4">
-			<h4>fatherhood</h4>
-			<p>my girls are the reason i do everything. and the reason i have the time for nothing.</p>
-		</div>
-		<div class="col-xs-4">
-			<h4>big screen + dark room</h4>
-			<p>is it still a mancave when my daughters have the remote more than i do?</p>
-		</div>
-		<div class="col-xs-4">
-			<h4>4 color stories</h4>
-			<img src="assets/img/Saga.jpg" alt="Comics. Like Saga!" class="img-responsive">
-		</div>
-	</div>
+                <p>welcome to my page. this page, like me, like the future, is
+                constantly under development. my current stage of development
+                brings me to <a href="http://www.devcodecamp.com/" target=
+                "_blank">devCodeCamp</a> where i am honing my skills. but being
+                a student doesn't mean i'm a novice. it means i strive to be
+                current, relevant, and always moving forward.</p>
+            </div>
 
-	<div style="padding:30px"></div>
+            <div class="col-md-4">
+                <h2>&nbsp;&nbsp;contact me</h2>
 
-	<div class="row"> 
-	  <div class="col-md-8"> 
-		<h2>my days as a devCodeCamper</h2>
-		<h4>a daily log of my experience at a developer boot camp</h4> 
-		</div> 
-	  <div class="col-md-4"> 
-		<span style="height:50px;"> </span> 
-		 <input type='text' class='search form-control input' id='search2' name="search2" placeholder="Search Blog" style="float:right;" />
-		<p id="hits"></p>
-		
-	  </div> 
-	</div> 
+                <div class="list-group">
+                    <a class="list-group-item" href=
+                    "mailto:mgalang_h@devCodeCamp.com" target="_top">
+                    <h4 class="list-group-item-heading">at devCodeCamp:</h4>
 
-	<div class="row"> 
-	  <hr/> 
-	</div> 
+                    <p class="list-group-item-text">
+                    mgalang_h@devCodeCamp.com</p></a> <a class=
+                    "list-group-item" href="mailto:marcgalang@gmail.com"
+                    target="_top">
+                    <h4 class="list-group-item-heading">
+                    personal/professional:</h4>
 
-	<div id="blog" class="row"> 
-		
-	</div> 
+                    <p class="list-group-item-text">
+                    marcgalang@gmail.com</p></a><!-- <p><br /><strong><a href="blog.html" target="_blank">follow my progress at devCodeCamp</a></strong></p> 
+            <p><br /><form name="readblog" onsubmit="return pager(0)">
+            <input type="submit" value="follow my progress at devCodeCamp"> 
+        </form></p>-->
 
-	<div class="col-sm-4"> 
-		<form name="left" onsubmit="return pager(-1);return false" >
-			<input type="submit" value="Previous Page" id="left"> 
-		</form>
-	</div>	
-	<div class="col-sm-4" >
-		<p id="pg">1</p>
-	</div>	
-	<div class="col-sm-4">  	
-		<form name="right" onsubmit="return pager(1);return false">
-			<input type="submit" value="Next Page"id = "right"> 
-		</form>
-	
-	</div>
+                    <p><a href="https://www.linkedin.com/in/mmgalang" target=
+                    "_blank"><img alt="linkedin" class="sicon" src=
+                    "assets/img/in.png"></a> <a href=
+                    "https://twitter.com/mmgalang" target="_blank"><img alt=
+                    "instagram" class="sicon" src=
+                    "assets/img/tw.png"></a></p><br>
+                </div>
+            </div>
+        </div>
 
+        <p style="padding:5px"></p>
 
-   <div class="row">
-	<hr/>
-	<footer class="col-md-8 text-center">
-	    <p class="text-muted">
-	    <small>
-	    Built using
-	    <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>,
-	    <a href="http://www.bootswatch.com" target="_blank">Readable by Bootswatch</a>,
-	    <a href="http://glyphicons.com" target="_blank">Glyphicons</a>,
-	    <a href="https://www.behance.net/abhishekpipalva" target="_blank">Icons by Abhishek Pipalva</a>,
-	    <a href="http://www.jquery.com" target="_blank">jQuery</a>.
-	    <br/>
-	    Content &copy; 2015 <a href="http://www.devcodecamp.com/" target="_blank">devCodeCamp</a> &amp; marc galang
-	    </small>
-	    </p>
-	</footer>
-    </div>		
-	<script>
-		$(document).ready(function(){
-			console.log("calling getposts");
-			getposts();
-			});
-	</script>
-</div><!-- /.container -->
+        <div class="row hideOnSearch">
+            <div class="col-md-8">
+                <h2>what consumes my time when i'm not coding?</h2>
+                <hr>
+            </div>
+        </div>
 
-<!--  JavaScript - Placed at the end of the document so the pages load faster -->
-<script src="assets/js/bootstrap.min.js"></script>
-<script>
-	$("#search-second").bind("input" ,function(){
-	getselection($("#search-second").val());
-	});
-	
-	$("#search2").bind("input" ,function(){
-	$("#search-second").val($("#search2").val());
-	$("#search-second").focus();
-	getselection($("#search2").val());
-	});
-</script>	
+        <div class="row hideOnSearch">
+            <div class="col-xs-4">
+                <h4>fatherhood</h4>
+
+                <p>my girls are the reason i do everything. and the reason i
+                have the time for nothing.</p>
+            </div>
+
+            <div class="col-xs-4">
+                <h4>big screen + dark room</h4>
+
+                <p>is it still a mancave when my daughters have the remote more
+                than i do?</p>
+            </div>
+
+            <div class="col-xs-4">
+            <h4>4 color stories</h4><img alt="Comics. Like Saga!" class=
+            "img-responsive" src="assets/img/Saga.jpg"></div>
+        </div>
+
+        <div style="padding:30px"></div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>my days as a devCodeCamper</h2>
+
+                <h4>a daily log of my experience at a developer boot camp</h4>
+            </div>
+
+            <div class="col-md-4">
+                <span style="height:50px;"></span> <input class=
+                'search form-control input' id='search2' name="search2"
+                placeholder="Search Blog" style="float:right;" type='text'>
+
+                <p id="hits"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr>
+        </div>
+
+        <div class="row" id="blog"></div>
+
+        <div class="col-sm-4">
+            <form id="left" name="left" onsubmit=
+            "return pager(-1);return false">
+                <input id="left" type="submit" value="Previous Page">
+            </form>
+        </div>
+
+        <div class="col-sm-4">
+            <p id="pg">1</p>
+        </div>
+
+        <div class="col-sm-4">
+            <form id="right" name="right" onsubmit=
+            "return pager(1);return false">
+                <input id="right" type="submit" value="Next Page">
+            </form>
+        </div>
+
+        <div class="row">
+            <hr>
+
+            <footer class="col-md-8 text-center">
+                <p class="text-muted"><small>Built using <a href=
+                "http://twitter.github.com/bootstrap/" target=
+                "_blank">Bootstrap</a>, <a href="http://www.bootswatch.com"
+                target="_blank">Readable by Bootswatch</a>, <a href=
+                "http://glyphicons.com" target="_blank">Glyphicons</a>,
+                <a href="https://www.behance.net/abhishekpipalva" target=
+                "_blank">Icons by Abhishek Pipalva</a>, <a href=
+                "http://www.jquery.com" target="_blank">jQuery</a>.<br>
+                Content &copy; 2015 <a href="http://www.devcodecamp.com/"
+                target="_blank">devCodeCamp</a> &amp; marc galang</small></p>
+            </footer>
+        </div><script>
+$(document).ready(function(){
+            console.log("calling getposts");
+            getposts();
+            });
+        </script>
+    </div><!-- /.container -->
+    <!--  JavaScript - Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script> <script>
+$("#search-second").bind("input" ,function(){
+    getselection($("#search-second").val());
+    });
+
+    $("#search2").bind("input" ,function(){
+    $("#search-second").val($("#search2").val());
+    $("#search-second").focus();
+    getselection($("#search2").val());
+    });
+    </script>
 </body>
 </html>
