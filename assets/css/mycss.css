@@ -17,6 +17,7 @@ h1,h2,h3,h4,a {
 
 .img-responsive{
 margin: 0 auto;
+pading: 0px;
 }
 
 input{
