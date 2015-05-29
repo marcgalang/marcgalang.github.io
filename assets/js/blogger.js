@@ -25,6 +25,10 @@ function pickPix(){
 	$("#comic").attr("src",comic);
 	
 	var Movies = [
+	"http://ia.media-imdb.com/images/M/MV5BMTg4ODkzMDQ3Nl5BMl5BanBnXkFtZTgwNTEwMTkxMDE@._V1_SX640_SY720_.jpg",
+	"http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX640_SY720_.jpg",
+	"http://ia.media-imdb.com/images/M/MV5BMTIwMDQ1NzQyOF5BMl5BanBnXkFtZTcwMTE4MDQzMQ@@._V1._CR3,43,349,456_SX640_SY720_.jpg",
+	"http://www.fanboy.com/wp-content/uploads/2010/10/Star-Wars-alternative-movie-poster.jpg"
 		];
 	var movie = Movies[Math.floor(Math.random() * Movies.length)];
 	$("#movie").attr("src",movie);
