@@ -25,10 +25,12 @@ function pickPix(){
 	$("#comic").attr("src",comic);
 	
 	var Movies = [
-	"http://ia.media-imdb.com/images/M/MV5BMTg4ODkzMDQ3Nl5BMl5BanBnXkFtZTgwNTEwMTkxMDE@._V1_SX640_SY720_.jpg",
-	"http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX640_SY720_.jpg",
-	"http://ia.media-imdb.com/images/M/MV5BMTIwMDQ1NzQyOF5BMl5BanBnXkFtZTcwMTE4MDQzMQ@@._V1._CR3,43,349,456_SX640_SY720_.jpg",
-	"http://www.fanboy.com/wp-content/uploads/2010/10/Star-Wars-alternative-movie-poster.jpg"
+	"http://www.impawards.com/2010/mr_nobody_ver6_xlg.html",
+	"http://meetinthelobby.com/wp-content/uploads/2010/11/InceptionAlternateMoviePoster.jpg",
+	"http://2.bp.blogspot.com/-30rlkP7MuwU/UTZlGNjEDTI/AAAAAAAAAHg/M_qho92V4s8/s1600/brazil.jpg",
+	"http://www.fanboy.com/wp-content/uploads/2010/10/Star-Wars-alternative-movie-poster.jpg",
+	"https://s-media-cache-ak0.pinimg.com/736x/1c/58/8d/1c588df1f4c7991f3e00a8dcca1a20eb.jpg",
+	"http://assets.flicks.co.nz/images/movies/poster/dc/dc2208f9bbd11486d5dbbb9218e03017_500x735.jpg"
 		];
 	var movie = Movies[Math.floor(Math.random() * Movies.length)];
 	$("#movie").attr("src",movie);
