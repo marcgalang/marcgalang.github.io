@@ -15,14 +15,28 @@ function getposts(){
 	 return false;
 }	 
 function pickComic(){
-	var favorites = [
+	var Comics = [
 	"http://static.comicvine.com/uploads/scale_large/10/108980/2260155-saga__1__2012_.jpg",
 	"http://static.comicvine.com/uploads/scale_large/0/9116/2199272-01.jpg",
 	"http://static.comicvine.com/uploads/scale_large/6/67663/2971157-09.jpg",
 	"http://static.comicvine.com/uploads/scale_large/6/67663/4261575-01-2nd-print.jpg"
 	];
-	var favorite = favorites[Math.floor(Math.random() * favorites.length)];
-	$("#comic").attr("src",favorite);
+	var comic = favorites[Math.floor(Math.random() * favorites.length)];
+	$("#comic").attr("src",comic);
+	
+	var Movies = [
+		];
+	var movie = favorites[Math.floor(Math.random() * favorites.length)];
+	$("#movie").attr("src",movie);
+	
+	var Kids = [
+	"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11189864_1576703815938441_1482264260_n.jpg",
+	"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/10729333_303385989864418_883564312_n.jpg",
+	"https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/10400247_1030765726175_1927_n.jpg?oh=2f4dc15de4cd3ff40d9af249f3e748fe&oe=5603ECBC",
+	"https://scontent.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1935534_1094587961691_3245752_n.jpg?oh=65dd8f2fb318370bb7147b3df567f8a1&oe=55C28A35"
+	];
+	var comic = favorites[Math.floor(Math.random() * favorites.length)];
+	$("#kid").attr("src",kid);
 }
 function pager(change){
 	console.log("running pager");
