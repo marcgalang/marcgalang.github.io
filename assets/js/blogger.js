@@ -14,7 +14,7 @@ function getposts(){
 	 });
 	 return false;
 }	 
-function pickComic(){
+function pickPix(){
 	var Comics = [
 	"http://static.comicvine.com/uploads/scale_large/10/108980/2260155-saga__1__2012_.jpg",
 	"http://static.comicvine.com/uploads/scale_large/0/9116/2199272-01.jpg",
@@ -35,7 +35,7 @@ function pickComic(){
 	"https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/10400247_1030765726175_1927_n.jpg?oh=2f4dc15de4cd3ff40d9af249f3e748fe&oe=5603ECBC",
 	"https://scontent.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1935534_1094587961691_3245752_n.jpg?oh=65dd8f2fb318370bb7147b3df567f8a1&oe=55C28A35"
 	];
-	var comic = favorites[Math.floor(Math.random() * favorites.length)];
+	var kid = favorites[Math.floor(Math.random() * favorites.length)];
 	$("#kid").attr("src",kid);
 }
 function pager(change){
