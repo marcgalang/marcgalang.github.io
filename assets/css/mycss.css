@@ -20,6 +20,9 @@ margin: 0 auto;
 padding: 0px;
 }
 
+.col-xs-6{
+font-size: 75%;}
+
 input{
     background-color: #ffffff;
     border-radius:6px;
