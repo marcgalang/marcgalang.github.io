@@ -14,6 +14,7 @@ function getposts(){
 	 });
 	 return false;
 }	 
+
 function pickPix(){
 	var Comics = [
 	"http://static.comicvine.com/uploads/scale_large/10/108980/2260155-saga__1__2012_.jpg",
@@ -44,6 +45,7 @@ function pickPix(){
 	var kid = Kids[Math.floor(Math.random() * Kids.length)];
 	$("#kid").attr("src",kid);
 }
+
 function pager(change){
 	console.log("running pager");
 	var page = Number($("#pg").html());
@@ -52,6 +54,7 @@ function pager(change){
 	var count = found.length;
  	for (c=0;c<=$('div.blogpost').length;c++){
 		$("#"+c+"").hide();
+		console.log ("hiding "+c);
 	}
 	console.log("found has "+found.length+"items which include "+found)
 	for (i=-5;i<=-1;i++){
