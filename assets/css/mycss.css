@@ -1,8 +1,7 @@
-p, form {
-    font-family: Verdana, Geneva, sans-serif
-}
 
-h1,h2,h3,h4,a {
+
+body {
+    font-family: Verdana, Geneva, sans-serif
     font-weight: 100;
 	color:#717171;
 }
@@ -22,6 +21,16 @@ padding: 0px;
 
 .col-xs-6{
 font-size: 75%;}
+
+.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
 
 input{
     background-color: #ffffff;
