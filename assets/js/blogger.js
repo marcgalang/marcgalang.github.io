@@ -1,7 +1,7 @@
 function getposts(){
 	$.getJSON('entries.json', function(data){
 		$.each(data.entries, function(key, val) { 
-			$("#blog").append("<div class='container well' id='"+key+"'><div  class='col-sm-8 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p><hr/></div></div>");
+			$("#blog").append("<div class='container well' id='"+key+"'><div  class='col-sm-8 blogpost'><small><p class='muted' style='float:right;'>"+data.entries[key].date+"</p></small><h5>"+data.entries[key].title+"</h5><p>"+data.entries[key].text+"</p></div></div>");
 		
 			if (data.entries.length-1==key){
 				found = [];
