@@ -26,7 +26,7 @@ function pickPix(){
 	$("#comic").attr("src",comic);
 	
 	var Movies = [
-	"http://www.impawards.com/2010/mr_nobody_ver6_xlg.html",
+	"http://www.impawards.com/2010/posters/mr_nobody_ver6.jpg",
 	"http://meetinthelobby.com/wp-content/uploads/2010/11/InceptionAlternateMoviePoster.jpg",
 	"http://2.bp.blogspot.com/-30rlkP7MuwU/UTZlGNjEDTI/AAAAAAAAAHg/M_qho92V4s8/s1600/brazil.jpg",
 	"http://www.fanboy.com/wp-content/uploads/2010/10/Star-Wars-alternative-movie-poster.jpg",
