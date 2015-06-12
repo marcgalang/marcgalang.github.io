@@ -31,7 +31,10 @@ function pickPix(){
 	"http://2.bp.blogspot.com/-30rlkP7MuwU/UTZlGNjEDTI/AAAAAAAAAHg/M_qho92V4s8/s1600/brazil.jpg",
 	"http://www.fanboy.com/wp-content/uploads/2010/10/Star-Wars-alternative-movie-poster.jpg",
 	"https://s-media-cache-ak0.pinimg.com/736x/1c/58/8d/1c588df1f4c7991f3e00a8dcca1a20eb.jpg",
-	"http://assets.flicks.co.nz/images/movies/poster/dc/dc2208f9bbd11486d5dbbb9218e03017_500x735.jpg"
+	"http://assets.flicks.co.nz/images/movies/poster/dc/dc2208f9bbd11486d5dbbb9218e03017_500x735.jpg",
+	"http://www.bloodyloud.com/wp-content/uploads/2010/12/Olly-Moss-Return-of-Jedi-560x840.jpg",
+	"http://www.empireonline.com/images/features/2010/olly-moss/harrypotter.jpg",
+	"http://www.dimensionstoolkit.com/wp-content/uploads/2014/12/newhope.jpg"
 		];
 	var movie = Movies[Math.floor(Math.random() * Movies.length)];
 	$("#movie").attr("src",movie);
